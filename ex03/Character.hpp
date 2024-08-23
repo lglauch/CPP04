@@ -10,6 +10,7 @@ class Character : public ICharacter
 	private:
 	AMateria *inv[4];
 	std::string _name;
+	AMateria *floor[100];
 
 	public:
 	Character(const std::string &name);

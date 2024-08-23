@@ -23,7 +23,6 @@ Ice& Ice::operator=(const Ice &old)
 
 Ice::~Ice()
 {
-	delete this;
 	std::cout << "Ice destructor called" << std::endl;
 }
 Ice* Ice::clone() const
@@ -33,5 +32,5 @@ Ice* Ice::clone() const
 
 void Ice::use(ICharacter& target) const
 {
-	std::cout << "Ice: * heals " << target << " wounds *" << std::endl;
+	std::cout << "Ice: * shoots an ice bolt at "<< target << std::endl;
 }

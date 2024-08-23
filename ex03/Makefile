@@ -4,7 +4,7 @@ CC := c++
 
 CPPFLAGS := -Wall -Wextra -Werror -std=c++98
 
-SRCS := main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.hpp ICharacter.cpp MateriaSource.cpp
+SRCS := main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp ICharacter.cpp MateriaSource.cpp
 
 OBJ := $(SRCS:.cpp=.o)
 

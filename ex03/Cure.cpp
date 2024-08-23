@@ -23,7 +23,6 @@ Cure& Cure::operator=(const Cure &old)
 
 Cure::~Cure()
 {
-	delete this;
 	std::cout << "Cure destructor called" << std::endl;
 }
 

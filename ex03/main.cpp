@@ -8,6 +8,9 @@
 
 int main()
 {
+	// IMateriaSource test;
+	// ICharacter test1;
+	// AMateria test2;
 	IMateriaSource* src = new MateriaSource();
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
