@@ -36,3 +36,8 @@ void Cat::makeSound() const
 {
 	std::cout << "Weird Cat noise" << std::endl;
 }
+
+std::string Cat::getIdea(unsigned int nb)
+{
+	return(idea->getIdea(nb));
+}

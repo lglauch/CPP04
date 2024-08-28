@@ -6,20 +6,21 @@
 
 int main()
 {
-	Animal* animals[10];
+	Animal* animals[100];
+	// Animal test;
 
-	for(int i = 0; i < 10; i++)
+	for(int i = 0; i < 100; i++)
 	{
 		if (i % 2 == 0)
 			animals[i] = new Dog();
 		else
 			animals[i] = new Cat();
 	}
-	for(int i = 0; i < 10; i++)
+	for(int i = 0; i < 100; i++)
 	{
 		animals[i]->makeSound();
 	}
-	for(int i = 0; i < 10; i++)
+	for(int i = 0; i < 100; i++)
 		delete animals[i];
 
 	std::cout << "-------------Deep Copy--------------" << std::endl;

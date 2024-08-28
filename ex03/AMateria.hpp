@@ -11,6 +11,7 @@ protected:
 	std::string type;
 
 public:
+	AMateria();
 	AMateria(std::string const & newtype);
 	AMateria(const AMateria &old);
 	AMateria& operator=(const AMateria &old);

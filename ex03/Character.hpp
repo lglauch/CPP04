@@ -13,6 +13,7 @@ class Character : public ICharacter
 	AMateria *floor[100];
 
 	public:
+	Character();
 	Character(const std::string &name);
 	Character(const Character &old);
 	Character& operator=(const Character &old);

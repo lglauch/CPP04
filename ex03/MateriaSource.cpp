@@ -50,10 +50,11 @@ void MateriaSource::learnMateria(AMateria* m)
 	{
 		if (inv[i] == nullptr)
 		{
-			inv[i] = m->clone();
+			inv[i] = m;
 			return;
 		}
 	}
+	delete m;
 	std::cout << "Inventory full!" << std::endl;
 }
 AMateria* MateriaSource::createMateria(std::string const & type)

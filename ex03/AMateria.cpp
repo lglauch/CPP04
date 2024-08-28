@@ -1,5 +1,11 @@
 #include "AMateria.hpp"
 
+AMateria::AMateria()
+{
+	type = "no type";
+	std::cout << "AMateria constructor called" << std::endl;
+}
+
 AMateria::AMateria(const std::string &newtype)
 {
 	type = newtype;

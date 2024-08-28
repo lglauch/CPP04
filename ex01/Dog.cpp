@@ -7,10 +7,10 @@ Dog::Dog()
 	std::cout << "Dog constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &old)
+Dog::Dog(const Dog &old) : Animal(old)
 {
 	type = old.type;
-	idea = new Brain;
+	idea = new Brain(*old.idea);
 	std::cout << "Dog copy constructor called" << std::endl;
 }
 
@@ -35,9 +35,4 @@ Dog::~Dog()
 void Dog::makeSound() const
 {
 	std::cout << "Weird Dog noise" << std::endl;
-}
-
-std::string Dog::getIdea(unsigned int nb)
-{
-	return(idea->getIdea(nb));
 }

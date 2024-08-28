@@ -2,9 +2,9 @@ NAME := program
 
 CC := c++
 
-CPPFLAGS := -Wall -Wextra -Werror
+CPPFLAGS := -Wall -Wextra -Werror -std=c++98
 
-SRCS := main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp ICharacter.cpp MateriaSource.cpp
+SRCS := main.cpp Dog.cpp Cat.cpp Animal.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp
 
 OBJ := $(SRCS:.cpp=.o)
 
