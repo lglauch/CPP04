@@ -39,6 +39,7 @@ Character& Character::operator=(const Character &old)
 {
 	if (this != &old)
 	{
+		_name = old._name;
 		for (int i = 0; i < 4; i++)
 		{
 			if (inv[i])
